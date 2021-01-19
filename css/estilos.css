@@ -1,0 +1,87 @@
+* {
+  list-style: none;
+  font-family: "Champagne & Limousines", sans-serif; }
+  * a {
+    text-decoration: none;
+    color: black; }
+
+.form-control {
+  max-width: 20vw; }
+
+.header__redes, .header__redes--mr {
+  margin: 0.5rem;
+  padding: 0.5rem; }
+
+.header__redes--mr {
+  margin-right: 0.5rem; }
+
+.header__contenedorRedes {
+  display: flex;
+  justify-content: center; }
+
+.header__cajaNavbar a:hover {
+  color: #C693A2; }
+
+.navbar__subMenu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  display: none; }
+
+ul li:hover ul {
+  display: flex; }
+
+.header__menu--fuente {
+  font-size: 1.4rem; }
+
+.carousel--tamanio {
+  max-height: 700px; }
+
+@media (max-width: 575.98px) {
+  .form-control {
+    max-width: 32vw; } }
+
+@media (max-width: 767.98px) {
+  .header__contenedorRedes {
+    margin-bottom: 1.2rem; }
+  .header__contenedorBuscar--start {
+    justify-content: flex-start !important; }
+  .header__cajaNavbar {
+    justify-content: center; }
+  .navbar__subMenu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    display: none; }
+  ul li:hover ul {
+    display: flex; } }
+
+@media (min-width: 576px) {
+  .form-control {
+    max-width: 32vw; } }
+
+@media (min-width: 768px) {
+  .header__contenedorRedes {
+    display: flex;
+    justify-content: flex-end; }
+  .form-control {
+    max-width: 20vw; }
+  .header__cajaNavbar {
+    justify-content: center; }
+  .header__navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around; } }
+
+@media (min-width: 992px) {
+  .header__navbar {
+    width: 80%; } }
+
+@media (min-width: 1200px) {
+  .form-control {
+    max-width: 18vw; } }
+
+@media (min-width: 1400px) {
+  .form-control {
+    max-width: 15vw; } }

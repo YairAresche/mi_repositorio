@@ -34,7 +34,7 @@
   flex-direction: column;
   display: none; }
 
-ul li:hover ul {
+.navbar__menu li:hover ul {
   display: flex; }
 
 .header__menu--fuente {
@@ -45,34 +45,66 @@ ul li:hover ul {
 
 footer {
   color: white; }
+  footer a:hover {
+    color: white; }
+  footer .footer--color {
+    background-color: #C693A2; }
+  footer .footer__iconos--tamanio {
+    width: 30px;
+    height: 30px; }
+  footer .footer__iconos--tamanio2 {
+    width: 25px;
+    height: 25px; }
+  footer .footer__mapa--nopadding {
+    padding-left: 0rem; }
 
-.footer--color {
-  background-color: #8FB7AC; }
+.contenedor__ultimos p {
+  margin-bottom: 0px;
+  font-size: 1.3rem; }
 
-.footer__iconos--tamanio {
-  width: 40px;
-  height: 40px; }
+.ultimos__parrafo--tamanio {
+  color: #737373;
+  text-align: left;
+  font-size: 1.5rem; }
 
-.footer__iconos--tamanio2 {
-  width: 30px;
-  height: 30px; }
+.ultimos__img--tamanio {
+  width: 200px;
+  height: 200px; }
 
-.footer__mapa--nopadding {
-  padding-left: 0rem; }
+/*--------CONTENIDO Sobre Mi--------*/
+.imgSobreMi {
+  height: 100%;
+  width: 100%; }
 
+.sobreMi__parrafo, .sobreMi__parrafo--negrita {
+  color: #737373;
+  text-align: left;
+  font-size: 1.5rem; }
+
+.sobreMi__parrafo--negrita {
+  font-weight: bold; }
+
+/*--------CONTENIDO Sobre Mi--------*/
 @media (max-width: 575.98px) {
   .form-control {
     max-width: 100vw; }
   .navbar__menu {
-    font-size: 0.9rem; } }
+    font-size: 0.9rem; }
+  .main__sobreMi--tamanio {
+    display: flex;
+    width: 250px;
+    height: 350px; }
+  .ultimos__img--tamanio {
+    width: 150px;
+    height: 150px; } }
 
 @media (max-width: 767.98px) {
   .header__logo--tamanio {
     width: 150px;
     height: 150px; }
   .header__redes--tamanio {
-    width: 50px;
-    height: 50px; }
+    width: 45px;
+    height: 45px; }
   .header__contenedorRedes {
     margin-bottom: 1.2rem; }
   .header__contenedorBuscar--start {
@@ -87,7 +119,7 @@ footer {
     height: 18rem;
     justify-content: space-around;
     font-size: 1rem; }
-  ul li:hover ul {
+  .navbar__menu li:hover ul {
     display: flex; } }
 
 @media (min-width: 576px) {
@@ -97,9 +129,13 @@ footer {
 @media (min-width: 768px) {
   .header__contenedorRedes {
     display: flex;
-    justify-content: flex-end; }
+    justify-content: center;
+    align-items: center; }
+  .header__redes--tamanio {
+    width: 55px;
+    height: 55px; }
   .form-control {
-    max-width: 20vw; }
+    max-width: 25vw; }
   .header__cajaNavbar {
     justify-content: center; }
   .header__navbar {
@@ -119,8 +155,8 @@ footer {
 
 @media (min-width: 1200px) {
   .form-control {
-    max-width: 18vw; } }
+    max-width: 22vw; } }
 
 @media (min-width: 1400px) {
   .form-control {
-    max-width: 15vw; } }
+    max-width: 22vw; } }

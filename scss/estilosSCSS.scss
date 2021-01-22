@@ -14,6 +14,11 @@ $verdePastel: #8FB7AC;
 // Funciones
 @mixin ancho-alto($ancho,$alto){width: $ancho; height: $alto;}
 @mixin margin-padding($margin,$padding){margin: $margin; padding: $padding;}
+@mixin parrafos($color,$posicion,$tamanioLetra){
+	color: $color;
+	text-align: $posicion;
+	font-size: $tamanioLetra
+}
 // Funciones
 
 // Modificación al buscador
@@ -26,7 +31,6 @@ $verdePastel: #8FB7AC;
 .header__redes{
 	@include margin-padding(0.5rem,0.5rem);
 	}
-
 .header__redes--mr{
 	@extend .header__redes;
 	margin-right: 0.5rem;
@@ -55,14 +59,12 @@ $verdePastel: #8FB7AC;
 	}
 }
 .navbar__subMenu{
-	// position: relative;
 	position: absolute;
 	display: flex;
 	flex-direction: column;
 	display: none;
-	// z-index: 1;
 }
-ul{
+.navbar__menu{
 	li:hover{
 		ul{
 		display: flex;
@@ -84,36 +86,87 @@ ul{
 // Footer
 footer{
 	color: white;
-}
-.footer--color{
-	background-color: $verdePastel;
-}
-.footer__iconos--tamanio{
-	@include ancho-alto(40px, 40px);
-}
-.footer__iconos--tamanio2{
-	@include ancho-alto(30px, 30px);
-}
-.footer__mapa--nopadding{
-	padding-left: 0rem;
+	a:hover{
+		color: white;
+	}
+	.footer--color{
+		background-color: $rosaViejo;
+		// background-color: #E3E2E2;
+	}
+	.footer__iconos--tamanio{
+		@include ancho-alto(30px, 30px);
+	}
+	.footer__iconos--tamanio2{
+		@include ancho-alto(25px, 25px);
+	}
+	.footer__mapa--nopadding{
+		padding-left: 0rem;
+	}
 }
 // Footer
+
+// ultimos productos
+// .contenedorPrincipal__ultimos--altura{
+// 	height: 500px;
+// 	// display: flex;
+// 	justify-content: center;
+// }
+.contenedor__ultimos{
+	p{
+		margin-bottom: 0px;
+		font-size: 1.3rem;
+	}
+}
+	.ultimos__parrafo--tamanio{
+		@include parrafos(#737373, left, 1.5rem);
+	}
+.ultimos__img--tamanio{
+	@include ancho-alto(200px, 200px);
+}
+// ultimos productos
+
+/*--------CONTENIDO Sobre Mi--------*/
+.imgSobreMi{
+  // height: 100%;
+  // width: 34rem;
+  height: 100%;
+  width: 100%;
+}
+
+.sobreMi__parrafo{
+	@include parrafos(#737373, left, 1.5rem)
+}
+.sobreMi__parrafo--negrita{
+	@extend .sobreMi__parrafo;
+	font-weight: bold;
+}
+/*--------CONTENIDO Sobre Mi--------*/
 
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
 	.form-control{
-	max-width: 100vw;
+		max-width: 100vw;
+	}
+	.navbar__menu{
+		font-size: 0.9rem;
+	}
+	.main__sobreMi--tamanio{
+		display: flex;
+		width: 250px;
+		height: 350px;
+		// text-align: center;
+	}
+	.ultimos__img--tamanio{
+	@include ancho-alto(150px, 150px);
 }
-.navbar__menu{
-	font-size: 0.9rem;
-}
+
 }
 @media (max-width: 767.98px) {
 	.header__logo--tamanio{
 		@include ancho-alto(150px, 150px);
 	}
 	.header__redes--tamanio{
-		@include ancho-alto(50px, 50px);
+		@include ancho-alto(45px, 45px);
 	}
 	.header__contenedorRedes{
 		margin-bottom: 1.2rem;
@@ -133,7 +186,7 @@ footer{
 	justify-content: space-around;
 	font-size: 1rem;
 }
-ul{
+.navbar__menu{
 		li:hover{
 			ul{
 			display: flex;
@@ -152,10 +205,14 @@ ul{
 @media (min-width: 768px) {
 	.header__contenedorRedes{
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
+	align-items: center;
 }
+	.header__redes--tamanio{
+		@include ancho-alto(55px, 55px);
+	}
 	.form-control{
-		max-width: 20vw;
+		max-width: 25vw;
 	}
 	.header__cajaNavbar{
 		justify-content: center;
@@ -187,13 +244,13 @@ ul{
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
 	.form-control{
-		max-width: 18vw;
+		max-width: 22vw;
 	}
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
 		.form-control{
-		max-width: 15vw;
+		max-width: 22vw;
 	}
 }

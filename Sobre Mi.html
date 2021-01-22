@@ -31,11 +31,11 @@
             </div>
           </div>
 
-          <div class="col-sm-12 col-md-4 order-0 order-md-1 text-center"><a href="index.html"><img class="mt-3 mb-3" src="img/logo-alilo-200x200.png" alt="Logo Alilo Ceramica"></a></div>
+          <div class="col-sm-12 col-md-4 order-0 order-md-1 text-center"><a href="index.html"><img class="header__logo--tamanio mt-3 mb-3" src="img/logo-alilo-200x200.png" alt="Logo Alilo Ceramica"></a></div>
 
           <div class="col-md-4 order-1 order-md-2 header__contenedorRedes">
-            <div><a href="#"><img class="rounded-circle header__redes--mr" src="img/logo Facebook transparente50x50.png" alt="Facebook"></a></div>
-            <div><a href="#"><img class="rounded-circle header__redes" src="img/logo Instagram transparente50x50.png" alt="Instagram"></a></div>
+            <div><a href="#"><img class="rounded-circle header__redes--mr header__redes--tamanio" src="img/facebook50x50.png" alt="Facebook"></a></div>
+            <div><a href="#"><img class="rounded-circle header__redes header__redes--tamanio" src="img/instagram50x50.png" alt="Instagram"></a></div>
           </div>
           
         </div>
@@ -43,14 +43,18 @@
 <!----------- LOGO ---------->
 
 <!-- Barra de navegación -->
-      <div class="container-fluid">
-        
-        <div class="container d-flex mt-5 header__cajaNavbar">
-
-          <ul class="header__navbar header__menu--fuente">
-            
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="productos.html">PRODUCTOS</a>
+<nav class="navbar navbar-expand-lg navbar-light mt-4 mb-4">
+  <div class="container-fluid">
+    <!-- <a class="navbar-brand" href="#">Menú</a> -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav justify-content-around navbar__menu">
+        <li class="nav-item"> <!-- Hice una modificación a la clase de bootstrap -->
+          <a class="nav-link" href="index.html">INICIO</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="productos.html">PRODUCTOS</a>
               <ul class="navbar__subMenu border">
                 <li><a href="#azucareras">Azucareras</a></li>
                 <li><a href="#bandejitas">Bandejitas</a></li>
@@ -63,16 +67,20 @@
                 <li><a href="#platos">Platos</a></li>
                 <li><a href="#tazas">Tazas</a></li>
               </ul>
-            </li>
-            <li><a href="Sobre Mi.html">SOBRE MI</a></li>
-            <li><a href="Preguntas Frecuentes.html">PREGUNTAS FRECUENTES</a></li>
-            <li><a href="Contacto.html">CONTACTO</a></li>
-
-          </ul>
-          
-        </div>
-
-      </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Sobre Mi.html">SOBRE MI</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Preguntas Frecuentes.html">PREGUNTAS FRECUENTES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contacto.html">CONTACTO</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 <!-- Barra de navegación -->
 
     </header>
@@ -80,13 +88,103 @@
 
 <!--------------- Contenido principal ---------------->
     <main>
-      
+     <div class="container-fluid">
+         <div class="container">
+            <div class="row text-center">
+                <h3 class="text-uppercase">Sobre Mi</h3>
+            </div>
+            <span class="row justify-content-center">
+                <span class="col-12 col-md-6 main__sobreMi--tamanio mt-3 mb-5">
+                    <img class="img-thumbnail" src="img/sobreMi.jpg" alt="Yo">
+                </span>
+                <div class="col-md-6">
+                    <div class="sobreMi__parrafo">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas cumque aspernatur, voluptatem eius atque consectetur? Odit ratione consequatur fuga veritatis possimus id porro placeat voluptatem, nihil molestias corrupti aspernatur officiis tempora, vitae atque error facilis saepe nesciunt in iure ducimus accusamus ad itaque autem. Laborum odio, nihil nisi perferendis esse iure nostrum fugiat, tempora consequuntur earum.</p>
+                      </div>
+                      <div class="mt-5 mb-5 text-uppercase">
+                        <h4>¿Por qué elegí esta profesión?</h4>
+                      </div>
+                      <div>
+                        <p class="sobreMi__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas tenetur repudiandae nostrum iure molestiae eos fuga hic dolor animi sint laboriosam vel in accusantium, aliquid eligendi dolorem iste beatae, rerum. Voluptatibus consequatur eveniet debitis placeat quasi asperiores, itaque ipsum voluptas minima pariatur porro velit numquam nulla neque dicta deleniti! Cumque, dolorum.</p>
+                        <p class="sobreMi__parrafo">Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Doloremque magnam repellendus adipisci deserunt non nihil cum earum.</p>
+                      </div>
+                      <div>
+                        <p class="sobreMi__parrafo--negrita text-center">Aún hoy mi sueño sigue siendo el arte...</p>
+                      </div>
+                      <div>
+                        <p class="sobreMi__parrafo">Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Impedit, natus, animi aut a amet, totam dolor consequatur reprehenderit.</p>
+                      </div>
+                </div>
+            </span> 
+         </div>
+     </div>
     </main>
 <!--------------- Contenido principal ---------------->
 
 <!------------------ Pie de página ------------------->
     <footer>
-      
+      <div class="container-fluid footer--color pt-3 lh-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-3">
+              <h6 class="text-uppercase fw-bold">Mapa de Alilo</h6>
+              <ul class="footer__mapa--nopadding">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="productos.html">PRODUCTOS</a>
+                  <ul class="footer__mapa--nopadding">
+                    <li><a href="#">Azucareras</a></li>
+                    <li><a href="#">Bandejitas</a></li>
+                    <li><a href="#">Chopps</a></li>
+                    <li><a href="#">Cuencos</a></li>
+                    <li><a href="#">Floreros</a></li>
+                    <li><a href="#">Hornitos Aromáticos</a></li>
+                    <li><a href="#">Jaboneras</a></li>
+                    <li><a href="#">Mates</a></li>
+                    <li><a href="#">Platos</a></li>
+                    <li><a href="#">Tazas</a></li>
+                  </ul>
+                </li>
+                <li><a href="Sobre Mi.html">SOBRE MI</a></li>
+                <li><a href="Preguntas Frecuentes.html">PREGUNTAS FRECUENTES</a></li>
+                <li><a href="Contacto.html">CONTACTO</a></li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <h6 class="text-uppercase fw-bold">Contactanos</h6>
+              <ul class="footer__mapa--nopadding">
+                <li>
+                  <img class="footer__iconos--tamanio2 mb-2 me-2" src="img/zap.png" alt="Telefono"><a href="#">+541167745914</a>
+                </li>
+                <li>
+                  <img class="footer__iconos--tamanio2 me-2 mb-2" src="img/arroba.png" alt="E-mail"><a href="#">ventas@alilo.com.ar</a>
+                </li>
+                <li>
+                  <img class="footer__iconos--tamanio2 mb-2 me-2" src="img/ubica.png" alt="Ubicacion"><a href="#">Paraná 3246</a>
+                </li>
+                <li>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.8617244683173!2d-58.51846928423922!3d-34.50638965986288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0fb32e778cb%3A0x2bb7247457fb25cf!2sParan%C3%A1%203246%2C%20B1636DYL%20Olivos%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1611322319317!5m2!1ses-419!2sar" width="150" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="col-6 col-md-3">
+              <h6 class="text-uppercase fw-bold">Nuestras redes</h6>
+              <span><a href="#"><img class="rounded-circle footer__iconos--tamanio2 me-2" src="img/facebook50x50.png" alt="Facebook"></a></span>
+            <span><a href="#"><img class="rounded-circle footer__iconos--tamanio2" src="img/instagram50x50.png" alt="Instagram"></a></span>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <h6 class="text-uppercase fw-bold">Medios de pago</h6>
+              <img class="footer__iconos--tamanio me-1" src="img/visa.png" alt="Visa">
+              <img class="footer__iconos--tamanio me-1" src="img/amex.png" alt="American Express">
+              <img class="footer__iconos--tamanio me-1" src="img/master.png" alt="MasterCard">
+              <img class="footer__iconos--tamanio" src="img/billete.png" alt="Efectivo">
+            </div>
+
+          </div>
+        </div>
+      </div>
     </footer>
 <!------------------ Pie de página ------------------->
 

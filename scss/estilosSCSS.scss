@@ -9,6 +9,7 @@
 // Variables
 $rosaViejo: #C693A2;
 $verdePastel: #8FB7AC;
+$celesteRetro: #c7d9fb;
 // Variables
 
 // Funciones
@@ -54,6 +55,7 @@ $verdePastel: #8FB7AC;
 	}
 }
 .navbar__menu{
+	letter-spacing: 2px;
 	a:hover{
 		color: $rosaViejo;
 	}
@@ -79,9 +81,110 @@ $verdePastel: #8FB7AC;
 
 // Carousel
 .carousel--tamanio{
-	max-height: 700px;
+	max-height: 600px;
 }
 // Carousel
+
+// Bienvenid@
+.bienvenida__titulo--interLetra{
+	letter-spacing: 2px;
+}
+.parrafo--tamanio{
+	@include parrafos(#737373, center, 1.2rem);
+	font-style: italic;
+	letter-spacing: 1.7px;
+}
+// bienvenid@
+
+// ultimos productos
+.contenedorPrincipal__ultimos--altura{
+	height: 34rem;
+	display: flex;
+}
+.contenedor__ultimos{
+	p{
+		margin-bottom: 0px;
+		font-size: 1rem;
+	}
+}
+	.ultimos__parrafo--tamanio{
+		@include parrafos(#737373, left, 1.2rem);
+	}
+	.img-thumbnail--mod {
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0rem;
+}
+// ultimos productos
+
+/*--------CONTENIDO Productos--------*/
+.catalogo--nopadding{
+	padding-left: 0rem;	
+}
+#catalogo{
+	.col-lg-3{
+		padding: 10px;
+	}
+	img{
+		width: 250px;
+		height: 200px;
+	}
+	img:hover{
+		border:5px solid white;
+	}
+	a:hover{
+		color: $rosaViejo;
+	}
+}
+.parrafo--nomargin{
+	margin-bottom: 0rem;
+}
+.menuLateral{
+	font-size: 1.3rem;
+	li{margin-bottom: 0.5rem;}
+}
+#detalles{
+	img{@include ancho-alto(35px, 35px);margin-right: 5px;}
+}
+/*--------CONTENIDO Productos--------*/
+
+// CONTENIDO Preguntas frecuentes
+.preguntas__titulos{
+	h5{font-weight: bold;}
+}
+.preguntas--bg{
+	background-color: $celesteRetro;
+}
+// CONTENIDO Preguntas frecuentes
+
+/*--------CONTENIDO Sobre Mi--------*/
+.imgSobreMi{
+  // height: 100%;
+  // width: 34rem;
+  height: 100%;
+  width: 100%;
+}
+.sobreMi__parrafo{
+	@include parrafos(#737373, left, 1.2rem)
+}
+.sobreMi__parrafo--negrita{
+	@extend .sobreMi__parrafo;
+	font-weight: bold;
+}
+/*--------CONTENIDO Sobre Mi--------*/
+
+/*--------CONTENIDO Contacto--------*/
+.formulario{
+  display: block;
+  justify-content: center;
+  margin-left: 5px;
+}
+.enviar{
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+/*--------CONTENIDO Contacto--------*/
 
 // Footer
 footer{
@@ -105,43 +208,6 @@ footer{
 }
 // Footer
 
-// ultimos productos
-// .contenedorPrincipal__ultimos--altura{
-// 	height: 500px;
-// 	// display: flex;
-// 	justify-content: center;
-// }
-.contenedor__ultimos{
-	p{
-		margin-bottom: 0px;
-		font-size: 1.3rem;
-	}
-}
-	.ultimos__parrafo--tamanio{
-		@include parrafos(#737373, left, 1.5rem);
-	}
-.ultimos__img--tamanio{
-	@include ancho-alto(200px, 200px);
-}
-// ultimos productos
-
-/*--------CONTENIDO Sobre Mi--------*/
-.imgSobreMi{
-  // height: 100%;
-  // width: 34rem;
-  height: 100%;
-  width: 100%;
-}
-
-.sobreMi__parrafo{
-	@include parrafos(#737373, left, 1.5rem)
-}
-.sobreMi__parrafo--negrita{
-	@extend .sobreMi__parrafo;
-	font-weight: bold;
-}
-/*--------CONTENIDO Sobre Mi--------*/
-
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
 	.form-control{
@@ -150,20 +216,22 @@ footer{
 	.navbar__menu{
 		font-size: 0.9rem;
 	}
-	.main__sobreMi--tamanio{
-		display: flex;
-		width: 250px;
-		height: 350px;
-		// text-align: center;
-	}
+	// .main__sobreMi--tamanio{
+	// 	display: flex;
+	// 	width: 250px;
+	// 	height: 350px;
+	// }
 	.ultimos__img--tamanio{
-	@include ancho-alto(150px, 150px);
-}
+	@include ancho-alto(170px, 170px);
+	}
+.contenedorPrincipal__ultimos--altura{
+	height: 54rem;
+	}
 
 }
 @media (max-width: 767.98px) {
 	.header__logo--tamanio{
-		@include ancho-alto(150px, 150px);
+		@include ancho-alto(125px, 125px);
 	}
 	.header__redes--tamanio{
 		@include ancho-alto(45px, 45px);
@@ -194,15 +262,25 @@ footer{
 		}
 }
 }
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
 	.form-control{
 		max-width: 32vw;
 	}
+	.ultimos__img--tamanio{
+	@include ancho-alto(260px, 260px);
+	}
+	.contenedorPrincipal__ultimos--altura{
+	height: 64rem;
+}
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+	.header__logo--tamanio{
+		@include ancho-alto(150px, 150px);
+	}
 	.header__contenedorRedes{
 	display: flex;
 	justify-content: center;
@@ -228,6 +306,15 @@ footer{
 		z-index: 1;
 		background-color: white;
 	}
+	#catalogo{
+		img{
+			width: 140px;
+			height: 125px;
+		}
+	}
+	#detalles{
+		img{@include ancho-alto(35px, 35px);margin-right: 5px;}
+	}
 }
 
 // Large devices (desktops, 992px and up)
@@ -238,7 +325,21 @@ footer{
 	.navbar__menu{
 	width: 60%;
 	}
-
+	.ultimos__img--tamanio{
+	@include ancho-alto(400px, 400px);
+	}
+	.contenedorPrincipal__ultimos--altura{
+	height: 78rem;
+	}
+	#catalogo{
+		img{
+			width: 175px;
+			height: 135px;
+		}
+	}
+	#detalles{
+		img{@include ancho-alto(35px, 35px);margin-right: 5px;}
+	}
 }
 
 // X-Large devices (large desktops, 1200px and up)
@@ -246,11 +347,29 @@ footer{
 	.form-control{
 		max-width: 22vw;
 	}
+	#catalogo{
+		img{
+			width: 225px;
+			height: 165px;
+		}
+	}
+	#detalles{
+		img{@include ancho-alto(35px, 35px);margin-right: 5px;}
+	}
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
 		.form-control{
 		max-width: 22vw;
+	}
+	#catalogo{
+		img{
+			width: 255px;
+			height: 205px;
+		}
+	}
+	#detalles{
+		img{@include ancho-alto(35px, 35px);margin-right: 5px;}
 	}
 }

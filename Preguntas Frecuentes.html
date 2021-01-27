@@ -7,7 +7,11 @@
     <meta name="description" content="Tienda de cerámica artesanal y molderia, somos Alilo cerámica">
     <meta name="keywords" content="platos, tazones, bazar, bowls, mates, tacitas, ceramica artesanal">
 
-<!-- Bootstrap CSS -->
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- WoW -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!-- Estilos Propios -->
     <link rel="stylesheet" href="css/estilos.css">
@@ -20,32 +24,38 @@
 <!---------------------- HEADER ---------------------->
     <header>
 
-<!----------- LOGO ---------->
       <div class="container-fluid">
         <div class="row">
 
+          <!----------- BUSCADOR ---------->
           <div class="col-md-4 order-2 order-md-0 align-self-center">
             <div class="input-group justify-content-center header__contenedorBuscar--start">
               <input type="search" class="form-control" placeholder="Buscar" aria-label="Search"
                 aria-describedby="search-addon" />
             </div>
           </div>
+          <!----------- BUSCADOR ---------->
 
-          <div class="col-sm-12 col-md-4 order-0 order-md-1 text-center"><a href="index.html"><img class="header__logo--tamanio mt-3 mb-3" src="img/logo-alilo-200x200.png" alt="Logo Alilo Ceramica"></a></div>
+          <!----------- LOGO ---------->
+          <div class="col-sm-12 col-md-4 order-0 order-md-1 text-center"><a href="index.html"><img class="header__logo--tamanio mt-3" src="img/logo-alilo-200x200.png" alt="Logo Alilo Ceramica"></a></div>
+          <!----------- LOGO ---------->
 
-          <div class="col-md-4 order-1 order-md-2 header__contenedorRedes">
+          <!----------- REDES ---------->
+          <div class="col-md-4 order-1 order-md-2 header__contenedorRedes animate__animated animate__fadeInRightBig" style="animation-duration: 1.4s;">
+            
+          </style>
             <div><a href="#"><img class="rounded-circle header__redes--mr header__redes--tamanio" src="img/facebook50x50.png" alt="Facebook"></a></div>
             <div><a href="#"><img class="rounded-circle header__redes header__redes--tamanio" src="img/instagram50x50.png" alt="Instagram"></a></div>
           </div>
-          
+          <!----------- REDES ---------->
+
         </div>
       </div>
-<!----------- LOGO ---------->
+
 
 <!-- Barra de navegación -->
-<nav class="navbar navbar-expand-lg navbar-light mt-4 mb-4">
+<nav class="navbar navbar-expand-lg navbar-light mt-1">
   <div class="container-fluid">
-    <!-- <a class="navbar-brand" href="#">Menú</a> -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -56,23 +66,19 @@
         </li>
         <li class="nav-item"><a class="nav-link" href="productos.html">PRODUCTOS</a>
               <ul class="navbar__subMenu border">
-                <li><a href="#azucareras">Azucareras</a></li>
                 <li><a href="#bandejitas">Bandejitas</a></li>
-                <li><a href="#chopps">Chopps</a></li>
-                <li><a href="#cuencos">Cuencos</a></li>
                 <li><a href="#floreros">Floreros</a></li>
                 <li><a href="#hornitos">Hornitos Aromáticos</a></li>
-                <li><a href="#jaboneras">Jaboneras</a></li>
                 <li><a href="#mates">Mates</a></li>
                 <li><a href="#platos">Platos</a></li>
                 <li><a href="#tazas">Tazas</a></li>
               </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Sobre Mi.html">SOBRE MI</a>
+          <a class="nav-link" href="Preguntas Frecuentes.html">PREGUNTAS FRECUENTES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Preguntas Frecuentes.html">PREGUNTAS FRECUENTES</a>
+          <a class="nav-link" href="Sobre Mi.html">SOBRE MI</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="Contacto.html">CONTACTO</a>
@@ -88,13 +94,100 @@
 
 <!--------------- Contenido principal ---------------->
     <main>
-
+      <div class="container-fluid preguntas--bg">
+        <div class="container mt-5 pt-4 pb-4 preguntas__titulos">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <h5>Lorem ipsum dolor sit amet consectetur adipisicing?</h5>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <h5>Repudiandae autem iure assumenda eum architecto?</h5>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <h5>Maxime earum pariatur nobis dolorem fugiat sint?</h5>
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  <h5>Totam illum rerum doloremque?</h5>
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                  <h5>Totam voluptates ab provident fuga quia in placeat?</h5>
+                </button>
+              </h2>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                  <h5>Lorem ipsum dolor sit?</h5>
+                </button>
+              </h2>
+              <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="container-fluid preguntas--bg">
+        <div class="container mt-5 pt-4 pb-4 preguntas__titulos">
+          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing, elit tempore, veritatis?</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error impedit ratione esse quos quis? Voluptatem temporibus voluptatum ratione maiores repellat. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing, elit. Enim, aut architecto consequuntur in dignissimos exercitationem.</p>
+          <h4>Lorem ipsum dolor sit amet?</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Dicta fugiat officiis aperiam laborum debitis maiores.</p>
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit?</h4>
+          <p>Perspiciatis quam fugiat cupiditate nobis dolor illo veniam, possimus ut, quaerat repudiandae, eligendi adipisci sapiente vitae esse.</p>
+          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing, elit tempore, veritatis?</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error impedit ratione esse quos quis? Voluptatem temporibus voluptatum ratione maiores repellat?</p>
+          <h4>Lorem ipsum dolor sit amet?</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Dicta fugiat officiis aperiam laborum debitis maiores. Lorem ipsum dolor sit amet consectetur.</p>
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit?</h4>
+          <p>Perspiciatis quam fugiat cupiditate nobis dolor illo veniam, possimus ut, quaerat repudiandae, eligendi adipisci sapiente vitae esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates magnam iste quis iure ipsa consequatur tempora voluptas possimus maxime minima.</p>
+          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing, elit tempore, veritatis?</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error impedit ratione esse quos quis? Voluptatem temporibus voluptatum ratione maiores repellat?</p>
+          <h4>Lorem ipsum dolor sit amet?</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Dicta fugiat officiis aperiam laborum debitis maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, facere.</p>
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit?</h4>
+          <p>Perspiciatis quam fugiat cupiditate nobis dolor illo veniam, possimus ut, quaerat repudiandae, eligendi adipisci sapiente vitae esse.</p>
+        </div>
+      </div> -->
     </main>
 <!--------------- Contenido principal ---------------->
 
 <!------------------ Pie de página ------------------->
     <footer>
-      <div class="container-fluid footer--color pt-3 lh-1">
+      <div class="container-fluid footer--color pt-3 mb-4">
         <div class="container">
           <div class="row">
             <div class="col-6 col-md-3">
@@ -103,13 +196,9 @@
                 <li><a href="index.html">INICIO</a></li>
                 <li><a href="productos.html">PRODUCTOS</a>
                   <ul class="footer__mapa--nopadding">
-                    <li><a href="#">Azucareras</a></li>
                     <li><a href="#">Bandejitas</a></li>
-                    <li><a href="#">Chopps</a></li>
-                    <li><a href="#">Cuencos</a></li>
                     <li><a href="#">Floreros</a></li>
                     <li><a href="#">Hornitos Aromáticos</a></li>
-                    <li><a href="#">Jaboneras</a></li>
                     <li><a href="#">Mates</a></li>
                     <li><a href="#">Platos</a></li>
                     <li><a href="#">Tazas</a></li>
@@ -158,7 +247,12 @@
       </div>
     </footer>
 <!------------------ Pie de página ------------------->
-
+    
+    <!-- wow -->
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     

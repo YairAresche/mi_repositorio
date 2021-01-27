@@ -7,7 +7,11 @@
     <meta name="description" content="Compra online platos, tazones de campo, mates y mas vajilla. Hace tu pedido online">
     <meta name="keywords" content="platos, tazones, bazar, bowls, mates, tacitas, ceramica artesanal">
 
-<!-- Bootstrap CSS -->
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- WoW -->
+    <link rel = "stylesheet" href = "css / animate.css">
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!-- Estilos Propios -->
     <link rel="stylesheet" href="css/estilos.css">
@@ -20,30 +24,37 @@
 <!---------------------- HEADER ---------------------->
     <header>
 
-<!----------- LOGO ---------->
       <div class="container-fluid">
         <div class="row">
 
+          <!----------- BUSCADOR ---------->
           <div class="col-md-4 order-2 order-md-0 align-self-center">
             <div class="input-group justify-content-center header__contenedorBuscar--start">
               <input type="search" class="form-control" placeholder="Buscar" aria-label="Search"
                 aria-describedby="search-addon" />
             </div>
           </div>
+          <!----------- BUSCADOR ---------->
 
-          <div class="col-sm-12 col-md-4 order-0 order-md-1 text-center"><a href="index.html"><img class="header__logo--tamanio mt-3 mb-3" src="img/logo-alilo-200x200.png" alt="Logo Alilo Ceramica"></a></div>
+          <!----------- LOGO ---------->
+          <div class="col-sm-12 col-md-4 order-0 order-md-1 text-center"><a href="index.html"><img class="header__logo--tamanio mt-3" src="img/logo-alilo-200x200.png" alt="Logo Alilo Ceramica"></a></div>
+          <!----------- LOGO ---------->
 
-          <div class="col-md-4 order-1 order-md-2 header__contenedorRedes">
+          <!----------- REDES ---------->
+          <div class="col-md-4 order-1 order-md-2 header__contenedorRedes animate__animated animate__fadeInRightBig" style="animation-duration: 1.4s;">
+            
+          </style>
             <div><a href="#"><img class="rounded-circle header__redes--mr header__redes--tamanio" src="img/facebook50x50.png" alt="Facebook"></a></div>
             <div><a href="#"><img class="rounded-circle header__redes header__redes--tamanio" src="img/instagram50x50.png" alt="Instagram"></a></div>
           </div>
-          
+          <!----------- REDES ---------->
+
         </div>
       </div>
-<!----------- LOGO ---------->
+
 
 <!-- Barra de navegación -->
-<nav class="navbar navbar-expand-lg navbar-light mt-4 mb-4">
+<nav class="navbar navbar-expand-lg navbar-light mt-1">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -55,23 +66,19 @@
         </li>
         <li class="nav-item"><a class="nav-link" href="productos.html">PRODUCTOS</a>
               <ul class="navbar__subMenu border">
-                <li><a href="#azucareras">Azucareras</a></li>
                 <li><a href="#bandejitas">Bandejitas</a></li>
-                <li><a href="#chopps">Chopps</a></li>
-                <li><a href="#cuencos">Cuencos</a></li>
                 <li><a href="#floreros">Floreros</a></li>
                 <li><a href="#hornitos">Hornitos Aromáticos</a></li>
-                <li><a href="#jaboneras">Jaboneras</a></li>
                 <li><a href="#mates">Mates</a></li>
                 <li><a href="#platos">Platos</a></li>
                 <li><a href="#tazas">Tazas</a></li>
               </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Sobre Mi.html">SOBRE MI</a>
+          <a class="nav-link" href="Preguntas Frecuentes.html">PREGUNTAS FRECUENTES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Preguntas Frecuentes.html">PREGUNTAS FRECUENTES</a>
+          <a class="nav-link" href="Sobre Mi.html">SOBRE MI</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="Contacto.html">CONTACTO</a>
@@ -87,13 +94,129 @@
 
 <!--------------- Contenido principal ---------------->
     <main>
+      <div id="catalogo" class="container-fluid mt-5 mb-5">
+        <div class="text-center mb-5 ">
+          <h3 id="llevameArriba">CATÁLOGO</h3>
+        </div>
+          <div class="row">
 
+            <!-- Menú lateral -->
+            <div class="col-12 col-md-2 col-lg-2">
+              <!-- <div class="position-fixed"> -->
+                <h3 class="text-center text-md-start fw-bold mb-3">VAJILLA</h3>
+                <div class="">
+                  <ul class="text-center text-md-start catalogo--nopadding menuLateral">
+                    <li><a href="#bandejitas">Bandejitas</a></li>
+                    <li><a href="#floreros">Floreros</a></li>
+                    <li><a href="#hornitos">Hornitos</a></li>
+                    <li><a href="#mates">Mates</a></li>
+                    <li><a href="#platos">Platos</a></li>
+                    <li><a href="#tazas">Tazas</a></li>
+                  </ul>
+                </div>
+              <!-- </div> -->
+            </div>
+            <!-- Menú lateral -->
+
+            <!-- Catalogo -->
+            <div class="col-12 col-md-10 col-lg-10">
+
+              <!-- Item 1 -->
+              <div class="row text-center">
+                <h3 id="bandejitas" class="mb-4 mt-5">Bandejitas</h3>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img class="productos__img--tamanio mb-2" src="img/bandeja2.jpeg" alt="imagen"><p class="parrafo--nomargin">Tazon de campo</p><p>$900</p></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img class="productos__img--tamanio mb-2" src="img/bandeja3.jpeg" alt="imagen"><p class="parrafo--nomargin">Tazon de campo</p><p>$900</p></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img class="productos__img--tamanio mb-2" src="img/bandeja6.jpeg" alt="imagen"><p class="parrafo--nomargin">Tazon de campo</p><p>$900</p></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img class="productos__img--tamanio mb-2" src="img/bandeja5.jpeg" alt="imagen"><p class="parrafo--nomargin">Tazon de campo</p><p>$900</p></div>
+              </div>
+              <!-- Item 1 -->
+
+              <!-- Item 2 -->
+              <div class="row text-center">
+                <h3 id="floreros" class="mb-4">Floreros</h3>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img class="productos__img--tamanio mb-2" src="img/floreros.jpeg" alt="imagen"><p class="parrafo--nomargin">Tazon de campo</p><p>$900</p></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img class="productos__img--tamanio mb-2" src="img/floreros2.jpeg" alt="imagen"><p class="parrafo--nomargin">Tazon de campo</p><p>$900</p></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img class="productos__img--tamanio mb-2" src="img/floreros3.jpeg" alt="imagen"><p class="parrafo--nomargin">Tazon de campo</p><p>$900</p></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img class="productos__img--tamanio mb-2" src="img/up2.jpeg" alt="imagen"><p class="parrafo--nomargin">Tazon de campo</p><p>$900</p></div>
+              </div>
+              <!-- Item 2 -->
+
+              <!-- Item 3 -->
+              <div class="row text-center">
+                <h3 id="hornitos" class="mb-4">Hornitos</h3>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img class="productos__img--tamanio mb-2" src="img/hornitos.jpeg" alt="imagen"><p class="parrafo--nomargin">Tazon de campo</p><p>$900</p></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img class="productos__img--tamanio mb-2" src="img/hornitos2.jpeg" alt="imagen"><p class="parrafo--nomargin">Tazon de campo</p><p>$900</p></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img class="productos__img--tamanio mb-2" src="img/hornitos3.jpeg" alt="imagen"><p class="parrafo--nomargin">Tazon de campo</p><p>$900</p></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img class="productos__img--tamanio mb-2" src="img/hornitos4.jpeg" alt="imagen"><p class="parrafo--nomargin">Tazon de campo</p><p>$900</p></div>
+              </div>
+              <!-- Item 3 -->
+
+              <!-- Item 4 -->
+              <div class="row text-center">
+                <h3 id="mates" class="mb-4">Mates</h3>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img class="productos__img--tamanio mb-2" src="img/mate3.jpeg" alt="imagen"><p class="parrafo--nomargin">Tazon de campo</p><p>$900</p></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img class="productos__img--tamanio mb-2" src="img/mate4.jpeg" alt="imagen"><p class="parrafo--nomargin">Tazon de campo</p><p>$900</p></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img class="productos__img--tamanio mb-2" src="img/matealdi3.jpg" alt="imagen"><p class="parrafo--nomargin">Tazon de campo</p><p>$900</p></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img class="productos__img--tamanio mb-2" src="img/mate5.jpeg" alt="imagen"><p class="parrafo--nomargin">Tazon de campo</p><p>$900</p></div>
+              </div>
+              <!-- Item 4 -->
+
+              <!-- Item 5 -->
+              <div class="row text-center">
+                <h3 id="platos" class="mb-4">Platos</h3>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img class="productos__img--tamanio mb-2" src="img/platos.jpeg" alt="imagen"><p class="parrafo--nomargin">Tazon de campo</p><p>$900</p></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img class="productos__img--tamanio mb-2" src="img/platos2.jpeg" alt="imagen"><p class="parrafo--nomargin">Tazon de campo</p><p>$900</p></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img class="productos__img--tamanio mb-2" src="img/platos3.jpeg" alt="imagen"><p class="parrafo--nomargin">Tazon de campo</p><p>$900</p></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img class="productos__img--tamanio mb-2" src="img/plato4.jpeg" alt="imagen"><p class="parrafo--nomargin">Tazon de campo</p><p>$900</p></div>
+              </div>
+              <!-- Item 5 -->
+
+              <!-- Item 6 -->
+              <div class="row text-center">
+                <h3 id="tazas" class="mb-4">Tazas</h3>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img class="productos__img--tamanio mb-2" src="img/tazones.jpeg" alt="imagen"><p class="parrafo--nomargin">Tazon de campo</p><p>$900</p></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img class="productos__img--tamanio mb-2" src="img/tazones2.jpeg" alt="imagen"><p class="parrafo--nomargin">Tazon de campo</p><p>$900</p></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img class="productos__img--tamanio mb-2" src="img/tazones5.jpeg" alt="imagen"><p class="parrafo--nomargin">Tazon de campo</p><p>$900</p></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img class="productos__img--tamanio mb-2" src="img/tazones8.jpeg" alt="imagen"><p class="parrafo--nomargin">Tazon de campo</p><p>$900</p></div>
+              </div>
+              <!-- Item 6 -->
+
+              <!-- Detalles -->
+              <div class="container mt-5 mb-5">
+              <div id="detalles" class="row text-center">
+                <div class="col-lg-4">
+                  <h5 class="fw-bold"><img src="img/envios.png" alt="Envios">Envíos gratis en capital</h5>
+                  <p>GBA con mínimo de compra</p>
+                </div>
+                <div class="col-lg-4">
+                  <h5 class="fw-bold"><img class="productos__img--tamanio" src="img/tarjeta.png" alt="Tarjeta">6 cuotas sin interés</h5>
+                  <p>20% de descuento en efectivo</p>
+                </div>
+                <div class="col-lg-4">
+                  <h5 class="fw-bold"><img src="img/zap.png" alt="Consultas">Consultanos</h5>
+                  <p>1167745914</p>
+                </div>
+              </div>
+              </div>
+              <!-- Detalles -->
+              <div class="text-center">
+                <a href="#llevameArriba"> - LLevame arriba! - </a>
+              </div>
+            </div>
+            <!-- Catalogo -->
+            
+
+          </div>
+          
+            
+          
+      </div>
     </main>
 <!--------------- Contenido principal ---------------->
 
 <!------------------ Pie de página ------------------->
     <footer>
-      <div class="container-fluid footer--color pt-3 lh-1">
+      <div class="container-fluid footer--color pt-3 mb-4">
         <div class="container">
           <div class="row">
             <div class="col-6 col-md-3">
@@ -102,13 +225,9 @@
                 <li><a href="index.html">INICIO</a></li>
                 <li><a href="productos.html">PRODUCTOS</a>
                   <ul class="footer__mapa--nopadding">
-                    <li><a href="#">Azucareras</a></li>
                     <li><a href="#">Bandejitas</a></li>
-                    <li><a href="#">Chopps</a></li>
-                    <li><a href="#">Cuencos</a></li>
                     <li><a href="#">Floreros</a></li>
                     <li><a href="#">Hornitos Aromáticos</a></li>
-                    <li><a href="#">Jaboneras</a></li>
                     <li><a href="#">Mates</a></li>
                     <li><a href="#">Platos</a></li>
                     <li><a href="#">Tazas</a></li>
@@ -157,7 +276,12 @@
       </div>
     </footer>
 <!------------------ Pie de página ------------------->
-
+    
+    <!-- wow -->
+    <script src = "js / wow.min.js"> </script>
+              <script>
+              nuevo WOW (). init ();
+              </script>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     

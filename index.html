@@ -7,8 +7,12 @@
     <meta name="description" content="Tienda de cerámica artesanal y molderia, somos Alilo cerámica">
     <meta name="keywords" content="platos, tazones, bazar, bowls, mates, tacitas, ceramica artesanal">
 
-<!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- WoW -->
+    <link rel="stylesheet" href="css/animate.css">
     <!-- Estilos Propios -->
     <link rel="stylesheet" href="css/estilos.css">
 
@@ -20,32 +24,38 @@
 <!---------------------- HEADER ---------------------->
     <header>
 
-<!----------- LOGO ---------->
       <div class="container-fluid">
         <div class="row">
 
+          <!----------- BUSCADOR ---------->
           <div class="col-md-4 order-2 order-md-0 align-self-center">
             <div class="input-group justify-content-center header__contenedorBuscar--start">
               <input type="search" class="form-control" placeholder="Buscar" aria-label="Search"
                 aria-describedby="search-addon" />
             </div>
           </div>
+          <!----------- BUSCADOR ---------->
 
-          <div class="col-sm-12 col-md-4 order-0 order-md-1 text-center"><a href="index.html"><img class="header__logo--tamanio mt-3 mb-3" src="img/logo-alilo-200x200.png" alt="Logo Alilo Ceramica"></a></div>
+          <!----------- LOGO ---------->
+          <div class="col-sm-12 col-md-4 order-0 order-md-1 text-center"><a href="index.html"><img class="header__logo--tamanio mt-3" src="img/logo-alilo-200x200.png" alt="Logo Alilo Ceramica"></a></div>
+          <!----------- LOGO ---------->
 
-          <div class="col-md-4 order-1 order-md-2 header__contenedorRedes">
+          <!----------- REDES ---------->
+          <div class="col-md-4 order-1 order-md-2 header__contenedorRedes animate__animated animate__fadeInRightBig" style="animation-duration: 1.4s;">
+            
+          </style>
             <div><a href="#"><img class="rounded-circle header__redes--mr header__redes--tamanio" src="img/facebook50x50.png" alt="Facebook"></a></div>
             <div><a href="#"><img class="rounded-circle header__redes header__redes--tamanio" src="img/instagram50x50.png" alt="Instagram"></a></div>
           </div>
-          
+          <!----------- REDES ---------->
+
         </div>
       </div>
-<!----------- LOGO ---------->
+
 
 <!-- Barra de navegación -->
-<nav class="navbar navbar-expand-lg navbar-light mt-4 mb-4">
+<nav class="navbar navbar-expand-lg navbar-light mt-1">
   <div class="container-fluid">
-    <!-- <a class="navbar-brand" href="#">Menú</a> -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -56,23 +66,19 @@
         </li>
         <li class="nav-item"><a class="nav-link" href="productos.html">PRODUCTOS</a>
               <ul class="navbar__subMenu border">
-                <li><a href="#azucareras">Azucareras</a></li>
                 <li><a href="#bandejitas">Bandejitas</a></li>
-                <li><a href="#chopps">Chopps</a></li>
-                <li><a href="#cuencos">Cuencos</a></li>
                 <li><a href="#floreros">Floreros</a></li>
                 <li><a href="#hornitos">Hornitos Aromáticos</a></li>
-                <li><a href="#jaboneras">Jaboneras</a></li>
                 <li><a href="#mates">Mates</a></li>
                 <li><a href="#platos">Platos</a></li>
                 <li><a href="#tazas">Tazas</a></li>
               </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Sobre Mi.html">SOBRE MI</a>
+          <a class="nav-link" href="Preguntas Frecuentes.html">PREGUNTAS FRECUENTES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Preguntas Frecuentes.html">PREGUNTAS FRECUENTES</a>
+          <a class="nav-link" href="Sobre Mi.html">SOBRE MI</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="Contacto.html">CONTACTO</a>
@@ -95,16 +101,24 @@
           <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
           <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
           <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/navidad magica800x400.png" class="d-block w-100 carousel--tamanio" alt="...">
+            <img src="img/carousel3.jpg" class="d-block w-100 carousel--tamanio" alt="Carousel">
           </div>
           <div class="carousel-item">
-            <img src="img/utensillosrecor.jpg" class="d-block w-100 carousel--tamanio" alt="...">
+            <img src="img/carousel.jpg" class="d-block w-100 carousel--tamanio" alt="Carousel2">
           </div>
           <div class="carousel-item">
-            <img src="img/Muchos platos800x400.png" class="d-block w-100 carousel--tamanio" alt="...">
+            <img src="img/carouselaldi2.jpg" class="d-block w-100 carousel--tamanio" alt="Carousel3">
+          </div>
+          <div class="carousel-item">
+            <img src="img/carousel4.jpg" class="d-block w-100 carousel--tamanio" alt="Carousel4">
+          </div>
+          <div class="carousel-item">
+            <img src="img/carousel2.jpg" class="d-block w-100 carousel--tamanio" alt="Carousel5">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
@@ -116,10 +130,21 @@
       </div>
       <!-- CAROUSEL -->
 
-      <!-- ULTIMOS PRODUCTOS -->
-      <div class="container-fluid contenedorPrincipal__ultimos--altura mt-5 mb-5">
+      <!-- BIENVENIDA -->
+      <div class="container-fluid animated">
         <div class="container">
           <div class="row">
+            <h3 class="animate__animated animate__fadeInRightBig text-uppercase fw-bold text-center bienvenida__titulo--interLetra">Bienvenid@s a mi tienda!</h3>
+            <p class="parrafo--tamanio lh-1 mt-5">La tienda Alilo es una combinación de formas , líneas, hojas, figuras, colores, flores, y distintos diseños plasmados en piezas de cerámica artesanalmente. Desde un tazón de campo para acompañarte a arrancar un nuevo día, hasta una escultura para lucir en tu living. Cada objeto es imaginado , pensado y creado con mucho entusiasmo desde cero.  Te invito a que chusmees lo que quieras. Muchas gracias por pasar a visitarnos.</p>
+          </div>
+        </div>
+      </div>
+      <!-- BIENVENIDA -->
+
+      <!-- ULTIMOS PRODUCTOS -->
+      <div class="border container-fluid contenedorPrincipal__ultimos--altura mt-5 mb-5">
+        <div class="container align-self-center wow bounceInUp" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: bounceInUp;">
+          <div class="row justify-content-center">
             <div class="text-center">
               <h3>ULTIMOS PRODUCTOS</h3>
             </div>
@@ -130,19 +155,23 @@
             </div>
           </div>
           <div class="row text-center contenedor__ultimos">
-            <span class="col-6 col-md-3"><img class="ultimos__img--tamanio" src="img/up1.jpeg" alt="Tazas">
+            <span class="col-6 mb-4">
+              <img class="ultimos__img--tamanio img-thumbnail--mod" src="img/up1.jpeg" alt="Tazas">
               <p>Tazones de campo</p>
               <p>$ 1000</p>
             </span>
-            <span class="col-6 col-md-3"><img class="ultimos__img--tamanio" src="img/up2.jpeg" alt="Florero">
+            <span class="col-6 mb-4">
+              <img class="ultimos__img--tamanio img-thumbnail--mod" src="img/up2.jpeg" alt="Florero">
               <p>Florero Andrómeda</p>
               <p>$ 1350</p>
             </span>
-            <span class="col-6 col-md-3"><img class="ultimos__img--tamanio" src="img/up3.jpeg" alt="Hornitos">
+            <span class="col-6 mt-4">
+              <img class="ultimos__img--tamanio img-thumbnail--mod" src="img/up3.jpeg" alt="Hornitos">
               <p>Hornitos</p>
               <p>$ 1500</p>
             </span>
-            <span class="col-6 col-md-3"><img class="ultimos__img--tamanio" src="img/up5.jpeg" alt="Bandejita">
+            <span class="col-6 mt-4">
+              <img class="ultimos__img--tamanio img-thumbnail--mod" src="img/up5.jpeg" alt="Bandejita">
               <p>Bandejitas Planas</p>
               <p>$ 650</p>
             </span>
@@ -152,32 +181,27 @@
       <!-- ULTIMOS PRODUCTOS -->
 
       <!-- SOBRE MI -->
-      <div class="container-fluid">
+      <div class="container-fluid mb-5">
          <div class="container">
             <div class="row text-center">
-                <h3 class="text-uppercase">Sobre Mi</h3>
+                <h3 class=" text-uppercase mt-lg-3">Sobre Mi</h3>
             </div>
             <span class="row justify-content-center">
                 <span class="col-12 col-md-6 main__sobreMi--tamanio mt-3 mb-5">
-                    <img class="img-thumbnail" src="img/sobreMi.jpg" alt="Yo">
+                    <img class="img-thumbnail" src="img/sobreMi2.jpg" alt="Yo">
                 </span>
                 <div class="col-md-6">
                     <div class="sobreMi__parrafo">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas cumque aspernatur, voluptatem eius atque consectetur? Odit ratione consequatur fuga veritatis possimus id porro placeat voluptatem, nihil molestias corrupti aspernatur officiis tempora, vitae atque error facilis saepe nesciunt in iure ducimus accusamus ad itaque autem. Laborum odio, nihil nisi perferendis esse iure nostrum fugiat, tempora consequuntur earum.</p>
-                      </div>
-                      <div class="mt-5 mb-5 text-uppercase">
-                        <h4>¿Por qué elegí esta profesión?</h4>
+                        <p>Bueno detrás de este emprendimiento estoy yo, me presento, soy Aldi. Me sumergí en el universo de la cerámica en medio de la pandemia del 2020. Como quien busca escapar por medio del barro. Pero nunca imaginé que iba a enamorarme de esa forma.</p>
                       </div>
                       <div>
-                        <p class="sobreMi__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas tenetur repudiandae nostrum iure molestiae eos fuga hic dolor animi sint laboriosam vel in accusantium, aliquid eligendi dolorem iste beatae, rerum. Voluptatibus consequatur eveniet debitis placeat quasi asperiores, itaque ipsum voluptas minima pariatur porro velit numquam nulla neque dicta deleniti! Cumque, dolorum.</p>
-                        <p class="sobreMi__parrafo">Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Doloremque magnam repellendus adipisci deserunt non nihil cum earum.</p>
+                        <p class="sobreMi__parrafo">Siempre me encantó la vajilla artesanal, las flores, las tazas, las bandejas antiguas. En fin, amo que los objetos que usamos cotidianamente nos llenen la mesa de color, nos alegren, nos gusten. Como también poder regalarle un pedacito de arte a alguien especial y que esa persona lo haga parte de su hogar, de su mundo y su día a día. </p>
+                        <p class="sobreMi__parrafo">La cerámica es un material muy noble, atemporal. En este mundo en el que estamos inmersos, tan fugaz, tan descartable, industrializado , tan de plástico. Crear objetos artesanales que cuiden el planeta, que nos acompañen muchos muchos años, y que luego los reciban nuestras próximas generaciones, me pareció algo muy especial.</p>
                       </div>
-                      <div>
-                        <p class="sobreMi__parrafo--negrita text-center">Aún hoy mi sueño sigue siendo el arte...</p>
+                      <div class="sobreMi__parrafo">
+                        <p>Disfruto mucho imaginando y luego materializando mis ideas. Cada pieza está hecha a mano con mucho amor, y espero que eso lo sienta la persona que esté destinada a ser su dueña en cuanto la tenga por primera vez en sus manos.</p>
                       </div>
-                      <div>
-                        <p class="sobreMi__parrafo">Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Impedit, natus, animi aut a amet, totam dolor consequatur reprehenderit.</p>
-                      </div>
+                      <div class="d-flex sobreMi__parrafo"><p>“La idea no es vivir para siempre, sino crear algo que lo haga”</p><p class="fst-italic ms-2">ANDY WARHOL</p></div>
                 </div>
             </span> 
          </div>
@@ -188,7 +212,7 @@
 
 <!------------------ Pie de página ------------------->
     <footer>
-      <div class="container-fluid footer--color pt-3 lh-1">
+      <div class="container-fluid footer--color pt-3 mb-4">
         <div class="container">
           <div class="row">
             <div class="col-6 col-md-3">
@@ -197,13 +221,9 @@
                 <li><a href="index.html">INICIO</a></li>
                 <li><a href="productos.html">PRODUCTOS</a>
                   <ul class="footer__mapa--nopadding">
-                    <li><a href="#">Azucareras</a></li>
                     <li><a href="#">Bandejitas</a></li>
-                    <li><a href="#">Chopps</a></li>
-                    <li><a href="#">Cuencos</a></li>
                     <li><a href="#">Floreros</a></li>
                     <li><a href="#">Hornitos Aromáticos</a></li>
-                    <li><a href="#">Jaboneras</a></li>
                     <li><a href="#">Mates</a></li>
                     <li><a href="#">Platos</a></li>
                     <li><a href="#">Tazas</a></li>
@@ -252,9 +272,15 @@
       </div>
     </footer>
 <!------------------ Pie de página ------------------->
-
+    
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- wow -->
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
     
   </body>
 </html>

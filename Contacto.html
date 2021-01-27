@@ -7,7 +7,11 @@
     <meta name="description" content="whatsapp: +541167745914 Direccion: Av. la plata 715 - Boedo Horarios: lunes a sabados de 9 a 19hs">
     <meta name="keywords" content="platos, tazones, bazar, bowls, mates, tacitas, ceramica artesanal">
 
-<!-- Bootstrap CSS -->
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- WoW -->
+    <link rel = "stylesheet" href = "css / animate.css">
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!-- Estilos Propios -->
     <link rel="stylesheet" href="css/estilos.css">
@@ -18,34 +22,40 @@
   <body>
 
 <!---------------------- HEADER ---------------------->
-    <header>
+        <header>
 
-<!----------- LOGO ---------->
       <div class="container-fluid">
         <div class="row">
 
+          <!----------- BUSCADOR ---------->
           <div class="col-md-4 order-2 order-md-0 align-self-center">
             <div class="input-group justify-content-center header__contenedorBuscar--start">
               <input type="search" class="form-control" placeholder="Buscar" aria-label="Search"
                 aria-describedby="search-addon" />
             </div>
           </div>
+          <!----------- BUSCADOR ---------->
 
-          <div class="col-sm-12 col-md-4 order-0 order-md-1 text-center"><a href="index.html"><img class="header__logo--tamanio mt-3 mb-3" src="img/logo-alilo-200x200.png" alt="Logo Alilo Ceramica"></a></div>
+          <!----------- LOGO ---------->
+          <div class="col-sm-12 col-md-4 order-0 order-md-1 text-center"><a href="index.html"><img class="header__logo--tamanio mt-3" src="img/logo-alilo-200x200.png" alt="Logo Alilo Ceramica"></a></div>
+          <!----------- LOGO ---------->
 
-          <div class="col-md-4 order-1 order-md-2 header__contenedorRedes">
+          <!----------- REDES ---------->
+          <div class="col-md-4 order-1 order-md-2 header__contenedorRedes animate__animated animate__fadeInRightBig" style="animation-duration: 1.4s;">
+            
+          </style>
             <div><a href="#"><img class="rounded-circle header__redes--mr header__redes--tamanio" src="img/facebook50x50.png" alt="Facebook"></a></div>
             <div><a href="#"><img class="rounded-circle header__redes header__redes--tamanio" src="img/instagram50x50.png" alt="Instagram"></a></div>
           </div>
-          
+          <!----------- REDES ---------->
+
         </div>
       </div>
-<!----------- LOGO ---------->
+
 
 <!-- Barra de navegación -->
-<nav class="navbar navbar-expand-lg navbar-light mt-4 mb-4">
+<nav class="navbar navbar-expand-lg navbar-light mt-1">
   <div class="container-fluid">
-    <!-- <a class="navbar-brand" href="#">Menú</a> -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -56,23 +66,19 @@
         </li>
         <li class="nav-item"><a class="nav-link" href="productos.html">PRODUCTOS</a>
               <ul class="navbar__subMenu border">
-                <li><a href="#azucareras">Azucareras</a></li>
                 <li><a href="#bandejitas">Bandejitas</a></li>
-                <li><a href="#chopps">Chopps</a></li>
-                <li><a href="#cuencos">Cuencos</a></li>
                 <li><a href="#floreros">Floreros</a></li>
                 <li><a href="#hornitos">Hornitos Aromáticos</a></li>
-                <li><a href="#jaboneras">Jaboneras</a></li>
                 <li><a href="#mates">Mates</a></li>
                 <li><a href="#platos">Platos</a></li>
                 <li><a href="#tazas">Tazas</a></li>
               </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Sobre Mi.html">SOBRE MI</a>
+          <a class="nav-link" href="Preguntas Frecuentes.html">PREGUNTAS FRECUENTES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Preguntas Frecuentes.html">PREGUNTAS FRECUENTES</a>
+          <a class="nav-link" href="Sobre Mi.html">SOBRE MI</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="Contacto.html">CONTACTO</a>
@@ -88,13 +94,61 @@
 
 <!--------------- Contenido principal ---------------->
     <main>
-
+      <div class="container-fluid mt-5">
+        <form class="needs-validation" novalidate>
+          <div class="form-row formulario">
+            <div class="col-md-3 mb-3">
+              <label for="validationCustom01">Nombre</label>
+              <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre"  required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationCustom02">Apellido</label>
+              <input type="text" class="form-control" id="validationCustom02" placeholder="Apellido"  required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationCustom01">Celular</label>
+              <input type="tel" class="form-control" id="validationCustom01" placeholder="Ej. 1162581345"  required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationCustom02">E-mail</label>
+              <input type="email" class="form-control" id="validationCustom02" placeholder="ejemplo@gmail.com"  required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="formulario">
+              <textarea placeholder="Consultanos por nuestros productos..." cols="60" rows="6"></textarea>
+            </div>
+          </div>
+          <div class="form-group formulario">
+            <div class="form-check formulario">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Deseo recibir novedades de los nuevos productos.
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary formulario enviar mb-3 mt-2" type="submit">Enviar</button>
+        </form>
+      </div>
     </main>
 <!--------------- Contenido principal ---------------->
 
 <!------------------ Pie de página ------------------->
     <footer>
-      <div class="container-fluid footer--color pt-3 lh-1">
+      <div class="container-fluid footer--color pt-3 mb-4">
         <div class="container">
           <div class="row">
             <div class="col-6 col-md-3">
@@ -103,13 +157,9 @@
                 <li><a href="index.html">INICIO</a></li>
                 <li><a href="productos.html">PRODUCTOS</a>
                   <ul class="footer__mapa--nopadding">
-                    <li><a href="#">Azucareras</a></li>
                     <li><a href="#">Bandejitas</a></li>
-                    <li><a href="#">Chopps</a></li>
-                    <li><a href="#">Cuencos</a></li>
                     <li><a href="#">Floreros</a></li>
                     <li><a href="#">Hornitos Aromáticos</a></li>
-                    <li><a href="#">Jaboneras</a></li>
                     <li><a href="#">Mates</a></li>
                     <li><a href="#">Platos</a></li>
                     <li><a href="#">Tazas</a></li>
@@ -159,6 +209,11 @@
     </footer>
 <!------------------ Pie de página ------------------->
 
+    <!-- wow -->
+    <script src = "js / wow.min.js"> </script>
+              <script>
+              nuevo WOW (). init ();
+              </script>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     

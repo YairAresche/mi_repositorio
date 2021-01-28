@@ -22,6 +22,12 @@ $celesteRetro: #c7d9fb;
 }
 // Funciones
 
+// fuentes
+.simplicity{
+	font-family: "Simplicity", sans-serif; 
+}
+// fuentes
+
 // Modificación al buscador
 .form-control{
 	max-width: 20vw;
@@ -86,8 +92,8 @@ $celesteRetro: #c7d9fb;
 // Carousel
 
 // Bienvenid@
-.bienvenida__titulo--interLetra{
-	letter-spacing: 2px;
+.bienvenida__titulo{
+	letter-spacing: 5.5px;
 }
 .parrafo--tamanio{
 	@include parrafos(#737373, center, 1.2rem);
@@ -166,11 +172,7 @@ $celesteRetro: #c7d9fb;
   width: 100%;
 }
 .sobreMi__parrafo{
-	@include parrafos(#737373, left, 1.2rem)
-}
-.sobreMi__parrafo--negrita{
-	@extend .sobreMi__parrafo;
-	font-weight: bold;
+	@include parrafos(#737373, center, 1.2rem)
 }
 /*--------CONTENIDO Sobre Mi--------*/
 

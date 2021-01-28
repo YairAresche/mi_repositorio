@@ -5,6 +5,9 @@
     text-decoration: none;
     color: black; }
 
+.simplicity {
+  font-family: "Simplicity", sans-serif; }
+
 .form-control {
   max-width: 20vw; }
 
@@ -45,8 +48,8 @@
 .carousel--tamanio {
   max-height: 600px; }
 
-.bienvenida__titulo--interLetra {
-  letter-spacing: 2px; }
+.bienvenida__titulo {
+  letter-spacing: 5.5px; }
 
 .parrafo--tamanio {
   color: #737373;
@@ -116,13 +119,10 @@
   height: 100%;
   width: 100%; }
 
-.sobreMi__parrafo, .sobreMi__parrafo--negrita {
+.sobreMi__parrafo {
   color: #737373;
-  text-align: left;
+  text-align: center;
   font-size: 1.2rem; }
-
-.sobreMi__parrafo--negrita {
-  font-weight: bold; }
 
 /*--------CONTENIDO Sobre Mi--------*/
 /*--------CONTENIDO Contacto--------*/

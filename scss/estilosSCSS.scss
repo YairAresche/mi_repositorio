@@ -156,9 +156,7 @@ $celesteRetro: #c7d9fb;
 /*--------CONTENIDO Productos--------*/
 
 // CONTENIDO Preguntas frecuentes
-.preguntas__titulos{
-	h5{font-weight: bold;}
-}
+
 .preguntas--bg{
 	background-color: $celesteRetro;
 }
@@ -177,6 +175,11 @@ $celesteRetro: #c7d9fb;
 /*--------CONTENIDO Sobre Mi--------*/
 
 /*--------CONTENIDO Contacto--------*/
+.cuestionario--centrado{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 .formulario{
   display: block;
   justify-content: center;
@@ -226,10 +229,12 @@ footer{
 	.ultimos__img--tamanio{
 	@include ancho-alto(170px, 170px);
 	}
-.contenedorPrincipal__ultimos--altura{
+	.contenedorPrincipal__ultimos--altura{
 	height: 54rem;
 	}
-
+	.preguntas--fuente{
+	font-size: 0.8rem;
+	}
 }
 @media (max-width: 767.98px) {
 	.header__logo--tamanio{
@@ -307,6 +312,9 @@ footer{
 	.navbar__subMenu{
 		z-index: 1;
 		background-color: white;
+	}
+	.preguntas__titulos{
+	h5{font-weight: bold;}
 	}
 	#catalogo{
 		img{

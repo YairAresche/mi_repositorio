@@ -94,53 +94,37 @@
 
 <!--------------- Contenido principal ---------------->
     <main>
-      <div class="container-fluid mt-5">
-        <form class="needs-validation" novalidate>
-          <div class="form-row formulario">
-            <div class="col-md-3 mb-3">
-              <label for="validationCustom01">Nombre</label>
-              <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre"  required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-            <div class="col-md-3 mb-3">
-              <label for="validationCustom02">Apellido</label>
-              <input type="text" class="form-control" id="validationCustom02" placeholder="Apellido"  required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <label for="validationCustom01">Celular</label>
-              <input type="tel" class="form-control" id="validationCustom01" placeholder="Ej. 1162581345"  required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <label for="validationCustom02">E-mail</label>
-              <input type="email" class="form-control" id="validationCustom02" placeholder="ejemplo@gmail.com"  required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-            <div class="formulario">
-              <textarea placeholder="Consultanos por nuestros productos..." cols="60" rows="6"></textarea>
-            </div>
+      <div class="container mt-5">
+        <form>
+          <h2 class="text-center mb-3 animate__animated animate__fadeIn">Estamos para ayudarte!</h2>
+          <div class="cuestionario--centrado">
+            <input type="text" class="form-control mb-3"placeholder="Nombre"  required>
+
+            <input type="text" class="form-control mb-3"placeholder="Apellido"  required>
+
+            <input type="tel" class="form-control mb-3" placeholder="Ej. 1162581345"  required>
+
+            <!-- <label>E-mail</label> -->
+            <input type="email" class="form-control mb-3" placeholder="ejemplo@gmail.com"  required>
+
           </div>
-          <div class="form-group formulario">
-            <div class="form-check formulario">
-              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-              <label class="form-check-label" for="invalidCheck">
-                Deseo recibir novedades de los nuevos productos.
-              </label>
-              <div class="invalid-feedback">
-                You must agree before submitting.
-              </div>
-            </div>
+
+          <!-- text-area -->
+          <div class="mb-3 d-flex justify-content-center">
+            <textarea placeholder="Consultanos por nuestros productos..." class="form-control" rows="3"></textarea>
           </div>
-          <button class="btn btn-primary formulario enviar mb-3 mt-2" type="submit">Enviar</button>
+          <!-- text-area -->
+
+          <div class="cuestionario--centrado">
+          <!-- Check -->
+          <label class="form-check-label" for="invalidCheck">Deseo recibir novedades de los nuevos productos.</label>
+          <input class="form-check-input" type="checkbox" required>
+          <!-- Check -->
+
+          <!-- Enviar -->
+          <button class="btn btn-primary formulario mb-5 mt-4" type="submit">Enviar</button>
+          <!-- Enviar -->
+          </div>
         </form>
       </div>
     </main>

@@ -199,7 +199,6 @@ footer{
 	}
 	.footer--color{
 		background-color: $rosaViejo;
-		// background-color: #E3E2E2;
 	}
 	.footer__iconos--tamanio{
 		@include ancho-alto(30px, 30px);
@@ -221,11 +220,6 @@ footer{
 	.navbar__menu{
 		font-size: 0.9rem;
 	}
-	// .main__sobreMi--tamanio{
-	// 	display: flex;
-	// 	width: 250px;
-	// 	height: 350px;
-	// }
 	.ultimos__img--tamanio{
 	@include ancho-alto(170px, 170px);
 	}
@@ -234,6 +228,11 @@ footer{
 	}
 	.preguntas--fuente{
 	font-size: 0.8rem;
+	}
+	footer{
+		.footer__iconos--tamanio2{
+			@include ancho-alto(15px, 15px);
+		}
 	}
 }
 @media (max-width: 767.98px) {
